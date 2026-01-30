@@ -71,18 +71,28 @@
 }
 
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+      height: 100%;
+      font-size: 16px;
+      scroll-behavior: smooth;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
 }
 
 body {
-    font-family: var(--font-primary);
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    overflow-x: hidden;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+      height: 100%;
+      font-family: var(--font-primary);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
 }
 
 ::selection {
@@ -530,11 +540,13 @@ body {
 
 /* ========== MAIN INTERFACE ========== */
 .main-interface {
-    position: fixed;
-    inset: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s;
+      position: relative;
+      inset: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s;
+      min-height: 100vh;
+      overflow: visible;
 }
 
 .main-interface.active {
@@ -543,9 +555,10 @@ body {
 }
 
 .bg-canvas {
-    position: fixed;
-    inset: 0;
-    z-index: 0;
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
 }
 
 /* HUD Overlay */
@@ -740,15 +753,21 @@ body {
 
 /* Content Container */
 .content-container {
-    position: relative;
-    z-index: 10;
-    padding: 80px 2rem 2rem;
-    min-height: 100vh;
+      position: relative;
+      z-index: 10;
+      padding: 80px 2rem 2rem;
+      min-height: 100vh;
+      height: auto;
+      padding-bottom: 100px; 
 }
 
 .content-section {
-    display: none;
-    animation: sectionFadeIn 0.5s ease-out;
+      display: none;
+      animation: sectionFadeIn 0.5s ease-out;
+      position: relative;
+      min-height: 100vh;
+      padding: 40px 5%;
+      overflow: visible;
 }
 
 .content-section.active {
