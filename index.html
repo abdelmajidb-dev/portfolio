@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Boukhlik Hajji AbdelMajid - Développeur Full-Stack & Cybersécurité. Spécialisé en Flutter, React, PHP et sécurité applicative.">
+    <meta name="keywords" content="développeur full-stack, cybersécurité, Flutter, React, PHP, portfolio, Toulouse">
+    <meta name="author" content="Boukhlik Hajji AbdelMajid">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AbdelMajid Boukhlik - Développeur Full-Stack & Cybersécurité">
+    <meta property="og:description" content="Portfolio professionnel - Développeur Full-Stack spécialisé en applications web/mobile sécurisées">
+    <meta property="og:type" content="website">
+    
+    <title>AbdelMajid Boukhlik | Développeur Full-Stack & Cybersécurité</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">AM.DEV</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#experience" class="nav-link">Expériences</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <i class="fas fa-code"></i>
+                    <span>Développeur Full-Stack</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Boukhlik Hajji</span>
+                    <span class="title-line gradient-text">AbdelMajid</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                
+                <p class="hero-description">
+                    Je construis des applications web et mobile <strong>performantes et sécurisées</strong>,
+                    en combinant expertise technique Full-Stack et vigilance en cybersécurité.
+                </p>
+                
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Toulouse, France</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>BTS SIO SLAM</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Disponible</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Découvrir mes projets</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Me contacter</span>
+                    </a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="mailto:pro.abdelboukhlik@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/abdelmajid" class="social-link" aria-label="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/abdelmajid" class="social-link" aria-label="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="card-glow"></div>
+                    <div class="code-snippet">
+                        <div class="code-line"><span class="keyword">class</span> <span class="class-name">Developer</span> {</div>
+                        <div class="code-line">  <span class="property">name</span> = <span class="string">"AbdelMajid"</span>;</div>
+                        <div class="code-line">  <span class="property">skills</span> = [</div>
+                        <div class="code-line">    <span class="string">"Full-Stack"</span>,</div>
+                        <div class="code-line">    <span class="string">"Cybersécurité"</span>,</div>
+                        <div class="code-line">    <span class="string">"Flutter"</span></div>
+                        <div class="code-line">  ];</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Qui suis-je ?</span>
+                <h2 class="section-title">À propos</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Étudiant en BTS SIO option SLAM passionné par le développement d'applications
+                        performantes et la sécurité informatique. Je combine créativité technique et rigueur
+                        pour livrer des solutions robustes et élégantes.
+                    </p>
+                    
+                    <p>
+                        Mon parcours m'a permis de maîtriser le cycle complet de développement, du design
+                        d'interface à l'optimisation backend, en passant par la sécurisation des applications.
+                        Je suis particulièrement attiré par les défis techniques qui nécessitent innovation
+                        et attention aux détails.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Top 10% TryHackMe</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Git & Méthodes Agile</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Apps Multi-plateformes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="8">0</div>
+                            <div class="stat-label">Projets réalisés</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Technologies maîtrisées</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="30">0</div>
+                            <div class="stat-label">% Optimisation latence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Expertise technique</span>
+                <h2 class="section-title">Compétences</h2>
+            </div>
+            
+            <div class="skills-categories">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    <span>Toutes</span>
+                </button>
+                <button class="category-btn" data-category="languages">
+                    <i class="fas fa-code"></i>
+                    <span>Langages</span>
+                </button>
+                <button class="category-btn" data-category="frameworks">
+                    <i class="fas fa-layer-group"></i>
+                    <span>Frameworks</span>
+                </button>
+                <button class="category-btn" data-category="security">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Cybersécurité</span>
+                </button>
+                <button class="category-btn" data-category="tools">
+                    <i class="fas fa-tools"></i>
+                    <span>Outils</span>
+                </button>
+            </div>
+            
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Languages -->
+                <div class="skill-card" data-category="languages">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML/CSS</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="languages">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="languages">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3 class="skill-name">PHP</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="languages">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">SQL</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="languages">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="languages">
+                    <div class="skill-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3 class="skill-name">C#</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="languages">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="skill-name">Java</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 70%"></div>
+                    </div>
+                </div>
+                
+                <!-- Frameworks -->
+                <div class="skill-card featured" data-category="frameworks">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="skill-name">Flutter/Dart</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                    <span class="skill-badge">Spécialité</span>
+                </div>
+                
+                <div class="skill-card" data-category="frameworks">
+                    <div class="skill-icon">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h3 class="skill-name">Bootstrap</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="frameworks">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 70%"></div>
+                    </div>
+                </div>
+                
+                <!-- Security -->
+                <div class="skill-card featured" data-category="security">
+                    <div class="skill-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="skill-name">Authentification sécurisée</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                    <span class="skill-badge">Cyber</span>
+                </div>
+                
+                <div class="skill-card" data-category="security">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="skill-name">Nmap & Scanning</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="security">
+                    <div class="skill-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="skill-name">CTFs</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="security">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="skill-name">SIEM & Logs</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 70%"></div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Databases -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="skill-name">Git/GitHub</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3 class="skill-name">Docker</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="skill-name">Firebase/Supabase</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">MySQL</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="skill-name">Agile/Scrum</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Réalisations</span>
+                <h2 class="section-title">Projets</h2>
+            </div>
+            
+            <div class="projects-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Application Gestion Vêtements</h3>
+                            <span class="project-year">2024-2025</span>
+                        </div>
+                        
+                        <p class="project-description">
+                            Application mobile multiplateforme de gestion de garde-robe avec synchronisation
+                            temps réel et authentification sécurisée. Optimisation des performances avec
+                            réduction de 30% de la latence.
+                        </p>
+                        
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>-30% latence</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-sync"></i>
+                                <span>Sync temps réel</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="tag tag-flutter">Flutter</span>
+                            <span class="tag tag-dart">Dart</span>
+                            <span class="tag tag-supabase">Supabase</span>
+                            <span class="tag tag-auth">Auth</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Site Bar à Thème</h3>
+                            <span class="project-year">2023-2024</span>
+                        </div>
+                        
+                        <p class="project-description">
+                            Site web complet avec système de quiz interactif, gestion de sessions utilisateurs
+                            et optimisation SEO. Interface responsive avec animations fluides et design moderne.
+                        </p>
+                        
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <i class="fas fa-search"></i>
+                                <span>SEO optimisé</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Quiz interactif</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="tag tag-html">HTML/CSS</span>
+                            <span class="tag tag-js">JavaScript</span>
+                            <span class="tag tag-php">PHP</span>
+                            <span class="tag tag-mysql">MySQL</span>
+                            <span class="tag tag-bootstrap">Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 3 -->
+                <article class="project-card" data-category="desktop">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Gestion Laboratoire C#</h3>
+                            <span class="project-year">2025</span>
+                        </div>
+                        
+                        <p class="project-description">
+                            Application desktop de gestion de laboratoire développée avec méthodologie Agile.
+                            Interface utilisateur intuitive avec gestion complète des données et workflow optimisé.
+                        </p>
+                        
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <i class="fas fa-users"></i>
+                                <span>Interface intuitive</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-tasks"></i>
+                                <span>Méthode Agile</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="tag tag-csharp">C#</span>
+                            <span class="tag tag-mysql">MySQL</span>
+                            <span class="tag tag-agile">Agile</span>
+                            <span class="tag tag-gantt">Gantt</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Parcours professionnel</span>
+                <h2 class="section-title">Expériences</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Développeur Multiplateforme</h3>
+                            <span class="timeline-date">Jan - Fév 2025</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            <span>BARRE Melina</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Développement application mobile Flutter/Dart pour gestion de vêtements</li>
+                            <li>Synchronisation temps réel avec Supabase (réduction latence de 30%)</li>
+                            <li>Implémentation authentification sécurisée et gestion d'état</li>
+                            <li>Tests et optimisation des performances</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Développeur Android</h3>
+                            <span class="timeline-date">Mai - Juin 2024</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            <span>BARRE Melina</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Conception et développement application Android native</li>
+                            <li>Mise en place architecture MVVM et gestion de base de données</li>
+                            <li>Intégration API REST et gestion asynchrone</li>
+                            <li>Tests unitaires et documentation technique</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">API REST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Formation & Certifications</span>
+                <h2 class="section-title">Parcours académique</h2>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>BTS SIO option SLAM</h3>
+                        <div class="education-school">Lycée Henri Matisse</div>
+                        <div class="education-date">2023 - 2025</div>
+                        <ul class="education-details">
+                            <li>Développement d'applications web et mobile (Java, PHP)</li>
+                            <li>Gestion de bases de données (MySQL, SQLite)</li>
+                            <li>Gestion de versions avec Git et méthodes Agile</li>
+                            <li>Conception UML et architecture logicielle</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="certifications">
+                    <h3 class="certifications-title">Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Linux Unhatched</h4>
+                                <span class="cert-issuer">Cisco Networking Academy</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Cloud Computing</h4>
+                                <span class="cert-issuer">EC-Council</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Travaillons ensemble</span>
+                <h2 class="section-title">Contact</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>
+                        Je suis disponible pour des opportunités de stage, projets freelance ou postes
+                        en développement Full-Stack. N'hésitez pas à me contacter !
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:pro.abdelboukhlik@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">pro.abdelboukhlik@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+33769419470" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <span class="method-label">Téléphone</span>
+                                <span class="method-value">07 69 41 94 70</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <span class="method-label">Localisation</span>
+                                <span class="method-value">Toulouse, France</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/abdelmajid" class="social-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/abdelmajid" class="social-btn" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span>Envoyer le message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">AM.DEV</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p>Développeur Full-Stack & Cybersécurité</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="#about">À propos</a>
+                        <a href="#skills">Compétences</a>
+                        <a href="#projects">Projets</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Langues</h4>
+                        <span>Français (C1)</span>
+                        <span>Anglais (B1)</span>
+                        <span>Espagnol (C2)</span>
+                        <span>Arabe (C2)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AbdelMajid Boukhlik. Tous droits réservés.</p>
+                <p>Conçu et développé avec <i class="fas fa-heart"></i> à Toulouse</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
